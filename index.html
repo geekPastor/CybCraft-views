@@ -101,12 +101,12 @@
             <!-- php -S 172.16.13.54:8000 -->
 
         <div class="p-6 flex flex-col md:flex-row justify-between w-full relative bottom-16 md:bottom-0">
-            <div class="w-full md:w-5/12 mb-6 md:mb-0">
+            <div class="w-full md:w-5/12 mb-6 md:mb-0 pt-14 md:pt-0">
                 <h2 class="text-2xl font-bold mb-4 text-customBrown hidden md:block">A Propos de Moi</h2>
                 <ul class="md:mt-4">
                     <li class="mb-4">
                         <a class="flex items-center bg-white shadow-md rounded-md p-4" href="mailto:chrinovicmukeba123@gmail.com">
-                            <div class="bg-blue-800 p-2 rounded-l-md text-white">
+                            <div class="bg-blue-950 p-2 rounded-l-md text-white">
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
                             <div class="ml-4">
@@ -117,7 +117,7 @@
                     </li>
                     <li class="mb-4">
                         <a class="flex items-center bg-white shadow-md rounded-md p-4" href="tel:+243991007401">
-                            <div class="bg-blue-800 p-2 rounded-l-md text-white">
+                            <div class="bg-blue-950 p-2 rounded-l-md text-white">
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div class="ml-4">
@@ -128,7 +128,7 @@
                     </li>
                     <li class="mb-4">
                         <a href="index.html" class="flex items-center bg-white shadow-md rounded-md p-4">
-                            <div class="bg-blue-800 p-2 rounded-l-md text-white">
+                            <div class="bg-blue-950 p-2 rounded-l-md text-white">
                                 <i class="fa-solid fa-building"></i>
                             </div>
                             <div class="ml-4">
@@ -139,7 +139,7 @@
                     </li>
                     <li class="mb-4">
                         <div class="flex items-center bg-white shadow-md rounded-md p-4">
-                            <div class="bg-blue-800 p-2 rounded-l-md text-white">
+                            <div class="bg-blue-950 p-2 rounded-l-md text-white">
                                 <i class="fa-regular fa-map"></i>
                             </div>
                             <div class="ml-4">
@@ -151,25 +151,33 @@
                 </ul>
             </div>
 
+            <div class="pb-2 block md:hidden">
+                <!-- Ajoutez les icônes des réseaux sociaux ici -->
+                <h2 class="text-gray-500 text-2xl text-center font-bold mb-4">Mes Réseaux Sociaux</h2>
+                <div class="flex justify-center space-x-4 mt-8 gap-16 flex-wrap text-indigo-950">
+                    <a href="#" class="text-3xl insta"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-3xl link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-3xl"><i class="fas fa-globe"></i></a>
+                    <a href="#" class="text-3xl what"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-3xl twit"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-3xl snap"><i class="fab fa-snapchat"></i></a>
+                    <a href="#" class="text-3xl you"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
             <div class="w-full md:w-6/12">
-                <h2 class="text-2xl font-bold mb-2 text-customBrown">En savoir Plus sur Moi</h2>
+                <h2 class="text-2xl font-bold mb-2 text-blue-950">En savoir Plus sur Moi</h2>
                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                     aliquip ex ea commodo consequat.</p>
-
-                <h2 class="text-2xl font-bold mb-2 text-customBrown">Mes Compétences</h2>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
       
 
-        <div class="flex justify-center space-x-4 pb-1">
+        <div class="pb-2  hidden md:block">
             <!-- Ajoutez les icônes des réseaux sociaux ici -->
-            <div class="flex justify-center space-x-4 mt-8 gap-16 flex-wrap text-indigo-950">
+            <h2 class="text-blue-950 text-2xl text-center font-bold mb-4">Mes Réseaux Sociaux</h2>
+            <div class="flex justify-center space-x-4 mt-8 gap-16 flex-wrap text-blue-950">
                 <a href="#" class="text-3xl insta"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="text-3xl link"><i class="fab fa-linkedin"></i></a>
                 <a href="#" class="text-3xl"><i class="fas fa-globe"></i></a>
@@ -181,50 +189,58 @@
         </div>
 
         <div class="flex justify-center items-center flex-col mt-6 gap-4 w-full">
-            <button class="px-6 py-2 hover:bg-indigo-950 hover:text-white text-indigo-950 customBG rounded-md border-2 border-indigo-950 duration-300">
+            <button class="px-6 py-2 hover:bg-blue-950 hover:text-white text-blue-950 customBG rounded-md border-2 border-blue-950 duration-300">
                 <i class="fa-solid fa-download"></i> Enregistrer contact
             </button>
-            <button class="px-6 py-2 hover:bg-indigo-950 hover:text-white text-indigo-950 customBG rounded-md border-2 border-indigo-950 duration-300">
+
+            <button onclick="togglePopup()" class="px-6 py-2 hover:bg-blue-950 hover:text-white text-blue-950 customBG rounded-md border-2 border-blue-950 duration-300">
                 <i class="fa-solid fa-share-from-square"></i> Envoyer mon contact
             </button>
         </div>
         
-        <div class="mt-12">
-            <h2 class="text-center text-2xl font-bold text-blue-800 mb-4">Services</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-8">
-                <div class="flex items-center bg-white shadow-md rounded-md p-4 hover:cursor-pointer">
-                    <div class="bg-blue-800 p-2 rounded-l-md text-white">
-                        <i class="fa-regular fa-circle-check"></i>
+        <div class="mt-12 flex justify-center flex-col">
+            <div class="bg-white rounded-lg p-6 md:order-2 w-full">
+                <h2 class="text-2xl font-bold mb-4 text-blue-950 text-center">Information sur l'entité</h2>
+                <p class="mb-4 text-center ">Maker-Corporation <a href="./about.html" class="hover:bg-blue-950 hover:text-white text-blue-950  py-1 px-2 rounded-md border-2 border-blue-950 duration-300">En savoir plus</a></p>
+            </div>
+
+            <div>
+                <h2 class="text-center text-2xl font-bold text-blue-950 mb-4">Services</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-8">
+                    <div class="flex items-center bg-white shadow-md rounded-md p-4 hover:cursor-pointer">
+                        <div class="bg-blue-950 p-2 rounded-l-md text-white">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-gray-700 font-semibold">BRANDING</p>
+                        </div>
                     </div>
-                    <div class="ml-4">
-                        <p class="text-gray-700 font-semibold">BRANDING</p>
+        
+                    <div class="flex items-center bg-white shadow-md rounded-md p-4 hover:cursor-pointer">
+                        <div class="bg-blue-950 p-2 rounded-l-md text-white">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-gray-700 font-semibold">ORGANISATION</p>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="flex items-center bg-white shadow-md rounded-md p-4 hover:cursor-pointer">
-                    <div class="bg-blue-800 p-2 rounded-l-md text-white">
-                        <i class="fa-regular fa-circle-check"></i>
+        
+                    <div href="index.html" class="flex items-center bg-white shadow-md rounded-md p-4 hover:cursor-pointer">
+                        <div class="bg-blue-950 p-2 rounded-l-md text-white">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-gray-700 font-semibold">WEB</p>
+                        </div>
                     </div>
-                    <div class="ml-4">
-                        <p class="text-gray-700 font-semibold">ORGANISATION</p>
-                    </div>
-                </div>
-    
-                <div href="index.html" class="flex items-center bg-white shadow-md rounded-md p-4 hover:cursor-pointer">
-                    <div class="bg-blue-800 p-2 rounded-l-md text-white">
-                        <i class="fa-regular fa-circle-check"></i>
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-gray-700 font-semibold">WEB</p>
-                    </div>
-                </div>
-    
-                <div class="flex items-center bg-white shadow-md rounded-md p-4 hover:cursor-pointer">
-                    <div class="bg-blue-800 p-2 rounded-l-md text-white">
-                        <i class="fa-regular fa-circle-check"></i>
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-gray-700 font-semibold">IMPRESSIONS</p>
+        
+                    <div class="flex items-center bg-white shadow-md rounded-md p-4 hover:cursor-pointer">
+                        <div class="bg-blue-950 p-2 rounded-l-md text-white">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-gray-700 font-semibold">IMPRESSIONS</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -235,8 +251,48 @@
         </div>
     </div>
 
-    <footer class="mt-8 text-center text-gray-600">
-        &copy; Cybcraft 2024. Tous droits réservés.
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50 hidden" id="popupForm">
+        <div class="bg-white shadow-md rounded-md p-6 w-full max-w-lg">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-semibold">Envoyer mon contact à Chrinovic Mukeba</h2>
+                <button class="text-gray-500 hover:text-gray-700" onclick="togglePopup()">X</button>
+            </div>
+
+            <form>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" for="name">Nom Complet :</label>
+                    <input type="text" id="name" class="w-full border border-gray-300 rounded-md p-2" placeholder="Nom complet">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" for="email">Email :</label>
+                    <input type="email" id="email" class="w-full border border-gray-300 rounded-md p-2" placeholder="Adresse email">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" for="phone">Numéro de Téléphone :</label>
+                    <input type="tel" id="phone" class="w-full border border-gray-300 rounded-md p-2" placeholder="Numéro de Téléphone">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" for="address">Adresse :</label>
+                    <input type="text" id="address" class="w-full border border-gray-300 rounded-md p-2" placeholder="Adresse, Code postale, Ville">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" for="notes">Notes :</label>
+                    <textarea id="notes" class="w-full border border-gray-300 rounded-md p-2" placeholder="Ajouter une note"></textarea>
+                </div>
+                <div class="flex justify-end">
+                    <button type="button" class="bg-red-500 text-white rounded-md px-4 py-2 mr-2" onclick="togglePopup()">Annuler</button>
+                    <button type="submit" class="bg-blue-600 text-white rounded-md px-4 py-2">Envoyer</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    <footer class="bg-blue-950 py-8 mt-16">
+        <div class="container mx-auto text-center">
+            <img src="logo.png" alt="Logo" class="mx-auto mb-4" style="max-width: 150px;">
+            <p class="text-gray-400">&copy; 2024 Cybcraft. All rights reserved.</p>
+        </div>
     </footer>
 
     <script>
@@ -252,6 +308,11 @@
                 menu.classList.add('hidden');
             }
         });
+
+        function togglePopup() {
+            const popupForm = document.getElementById('popupForm');
+            popupForm.classList.toggle('hidden');
+        }
     </script>
 </body>
 </html>

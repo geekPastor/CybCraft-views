@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50 hidden" id="popupForm">
+        <div class="bg-white shadow-md rounded-md p-6 w-full max-w-lg">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-semibold">Envoyer mon contact à Selena Mara</h2>
+                <button class="text-gray-500 hover:text-gray-700" onclick="togglePopup()">X</button>
+            </div>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" for="name">Nom Complet :</label>
+                    <input type="text" id="name" class="w-full border border-gray-300 rounded-md p-2" placeholder="Nom complet">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" for="email">Email :</label>
+                    <input type="email" id="email" class="w-full border border-gray-300 rounded-md p-2" placeholder="Adresse email">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" for="phone">Numéro de Téléphone :</label>
+                    <input type="tel" id="phone" class="w-full border border-gray-300 rounded-md p-2" placeholder="Numéro de Téléphone">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" for="address">Adresse :</label>
+                    <input type="text" id="address" class="w-full border border-gray-300 rounded-md p-2" placeholder="Adresse, Code postale, Ville">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" for="notes">Notes :</label>
+                    <textarea id="notes" class="w-full border border-gray-300 rounded-md p-2" placeholder="Ajouter une note"></textarea>
+                </div>
+                <div class="flex justify-end">
+                    <button type="button" class="bg-red-500 text-white rounded-md px-4 py-2 mr-2" onclick="togglePopup()">Annuler</button>
+                    <button type="submit" class="bg-blue-600 text-white rounded-md px-4 py-2">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Button to trigger the popup -->
+    <button class="bg-blue-600 text-white rounded-md px-4 py-2" onclick="togglePopup()">Ouvrir le formulaire</button>    
+</body>
+
+<script>
+    function togglePopup() {
+        const popupForm = document.getElementById('popupForm');
+        popupForm.classList.toggle('hidden');
+    }
+
+</script>
+</html>
